@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <h1>Edição do Cadastro de Cliente</h1>
+    <form action="/edit/cliente/salvar" method="post">
+      <input name="id" type="hidden" value=<%=cliente.id %> >
+      <label>Nome: </label>
+      <input name="nome" type="text" value= <%=cliente.nome %> ><br />
+      <label>Sobrenome: </label>
+      <input name="sobrenome" type="text" value=<%=cliente.sobrenome %>><br />
+      <input type="submit" value="Alterar" />
+    </form>
+   </body>
+</html>

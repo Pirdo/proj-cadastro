@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <h1>Edição do Cadastro de Produto</h1>
+    <form action="/edit/produto/salvar" method="post">
+      <input name="id" type="hidden" value=<%=produto.id %> >
+      <label>Nome: </label>
+      <input name="nome" type="text" value= <%=produto.nome %> ><br />
+      <label>Quantidade: </label>
+      <input name="quantidade" type="text" value=<%=produto.quantidade %>><br />
+      <label>Preço: </label>
+      <input name="preco" type="text" value=<%=produto.preco %>><br />
+      <input type="submit" value="Alterar" />
+    </form>
+   </body>
+</html>
